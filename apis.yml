@@ -1,7 +1,25 @@
 aid: brandripe
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brandripe.png
 name: Brandripe
-description: Brandripe is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Brandripe is a subscription-based, flat-rate creative services company providing on-demand
+  unlimited graphic design and unlimited revisions for a fixed monthly fee, positioned as an extension of
+  a customer's team as an alternative to hiring in-house designers or engaging traditional agencies. Its
+  dedicated creative teams cover motion design, digital ads, social media graphics, illustrations, print
+  design, packaging, branding, email design, web design, and presentations, with rapid (typically next
+  business day) turnarounds. The service targets SMEs, start-ups, agencies, and larger enterprises, and is
+  delivered entirely through its web platform rather than a public developer API. Brandripe was added to
+  the API Evangelist network as a portfolio company of 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/brandripe/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Graphic Design
+- Creative Services
+- Design Subscription
+- Branding
+- Marketing
+- Web Design
+- Motion Design
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,26 @@ maintainers:
 common:
 - type: Website
   url: https://brandripe.com
+- type: GettingStarted
+  url: https://brandripe.com/how-it-works
+- type: Pricing
+  url: https://brandripe.com/pricing
+- type: Blog
+  url: https://brandripe.com/blog
+- type: Support
+  url: https://help.brandripe.com/en/
+- type: SignUp
+  url: https://brandripe.com/register/user-details
+- type: Login
+  url: https://brandripe.com/login
+- type: TermsOfService
+  url: https://brandripe.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://brandripe.com/privacy-policy
+- type: DomainSecurity
+  url: security/brandripe-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
