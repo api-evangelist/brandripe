@@ -29,7 +29,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-13'
 tags:
 - Company
 - Graphic Design
@@ -66,8 +66,35 @@ common:
   url: https://brandripe.com/privacy-policy
 - type: DomainSecurity
   url: security/brandripe-domain-security.yml
+- type: Plans
+  url: plans/brandripe-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/brandripe-llms.txt
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
+  date: '2026-08-13'
+  status: minimal
+  artifacts_added: 3
   pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  note: >-
+    Full contract-discovery pass run 2026-08-13 (REST spec paths, GraphQL, MCP, A2A agent card,
+    all /.well-known/ paths) against every reachable and wildcard Brandripe host. No machine-readable
+    contract exists. Captured the real published subscription pricing, a recorded well-known absence,
+    a generated llms.txt, and refreshed the domain-security probe.
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Brandripe delivers flat-rate design subscriptions through its own customer web app at
+    brandripe.com; its 18-URL sitemap contains no developer, docs or API page, the Crisp help
+    center has no API or integration article, and every spec and /.well-known/ path probed on
+    brandripe.com and help.brandripe.com returned 404.
+  evidence:
+  - url: https://brandripe.com/sitemap.xml
+    status: 200
+  - url: https://brandripe.com/openapi.json
+    status: 404
+  - url: https://brandripe.com/.well-known/agent-card.json
+    status: 404
+  - url: https://help.brandripe.com/openapi.json
+    status: 404
+  checked: '2026-08-13'
