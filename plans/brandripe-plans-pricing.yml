@@ -1,0 +1,118 @@
+generated: '2026-08-13'
+method: searched
+source: https://brandripe.com/pricing
+note: >-
+  Brandripe sells a flat-rate creative subscription, not API access. These are the published
+  service plans as listed on the public pricing page; there is no API plan, no metered quota
+  and no developer tier, because the company publishes no API. Quotas below are expressed in
+  concurrent "active requests" (design jobs in flight), which is the unit Brandripe meters.
+currency: USD
+billing_periods:
+- monthly
+- quarterly
+- yearly
+plan_count: 4
+plans:
+- name: Basic Package
+  price: 499
+  currency: USD
+  period: month
+  billing: monthly
+  quota:
+    active_requests: 1
+    turnaround: 1-2 business days
+  includes:
+  - Designated designer
+  - Designated account manager
+  - Unlimited requests (queued, one active at a time)
+  - Unlimited revisions
+  alternate_pricing:
+  - billing: quarterly
+    price: 449
+    period: month
+    savings: 149.70
+    note: 10% saving vs monthly
+  - billing: yearly
+    price: 399
+    period: month
+    savings: 1197.60
+    note: 20% saving vs monthly
+- name: Premium Package
+  price: 699
+  currency: USD
+  period: month
+  billing: monthly
+  most_popular: true
+  quota:
+    active_requests: 1
+    turnaround: same day
+  includes:
+  - Designated designer
+  - Designated account manager
+  - Unlimited requests (queued, one active at a time)
+  - Unlimited revisions
+  alternate_pricing:
+  - billing: quarterly
+    price: 629
+    period: month
+    savings: 209.70
+    note: 10% saving vs monthly
+  - billing: yearly
+    price: 559
+    period: month
+    savings: 1677.60
+    note: 20% saving vs monthly
+- name: Gold Package
+  price: 1299
+  currency: USD
+  period: month
+  billing: monthly
+  quota:
+    active_requests: 2
+    turnaround: same day
+  includes:
+  - Designated designer
+  - Designated account manager
+  - Unlimited requests (queued, two active at a time)
+  - Unlimited revisions
+  alternate_pricing:
+  - billing: quarterly
+    price: 1169
+    period: month
+    savings: 389.70
+    note: 10% saving vs monthly
+  - billing: yearly
+    price: 1039
+    period: month
+    savings: 3117.60
+    note: 20% saving vs monthly
+- name: Custom Team Plans
+  price: null
+  currency: USD
+  period: null
+  billing: contact-sales
+  quota:
+    active_requests: null
+  note: >-
+    "If your business requires a higher volume of weekly creative deliverables, we can create
+    a customized plan." Priced via a TALK TO US contact form; no public rate card.
+contract_terms:
+  commitment: month-to-month
+  long_term_contract: false
+  cancellation: cancel any time
+deliverable_scope:
+- Digital ads
+- Social media graphics
+- Print design
+- Packaging
+- Branding
+- Email design
+- Illustration
+- Web design
+- Presentations
+- Animated GIFs
+- Motion graphics and video
+x-evidence:
+  fetched: '2026-08-13'
+  url: https://brandripe.com/pricing
+  http_status: 200

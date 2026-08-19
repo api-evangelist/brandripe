@@ -1,0 +1,56 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTPS probes of every reachable Brandripe host
+note: >-
+  Every /.well-known/ path probed on both reachable Brandripe hosts returned 404. This file
+  records a verified ABSENCE, not a presence — no WellKnown or SecurityTxt pointer is wired
+  in apis.yml, because the provider serves none of these documents. Wildcard DNS resolves
+  api./app./developer./docs./dev./portal./my.brandripe.com to the same origin (43.216.245.146)
+  but no TLS certificate is served for those names, so every HTTPS request to them fails at
+  the handshake (curl exit / status 000) rather than returning a document.
+hosts:
+- host: https://brandripe.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://help.brandripe.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+unreachable_hosts:
+- host: https://api.brandripe.com
+  result: tls-handshake-failed
+- host: https://app.brandripe.com
+  result: tls-handshake-failed
+- host: https://developer.brandripe.com
+  result: tls-handshake-failed
+- host: https://docs.brandripe.com
+  result: tls-handshake-failed
+x-evidence:
+  checked: '2026-08-13'
+  paths_probed: 14
+  documents_found: 0
