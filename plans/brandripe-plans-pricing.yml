@@ -116,3 +116,38 @@ x-evidence:
   fetched: '2026-08-13'
   url: https://brandripe.com/pricing
   http_status: 200
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  - subscription
+  units: []
+  plans:
+  - name: Basic Package
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Premium Package
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Gold Package
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Custom Team Plans
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
